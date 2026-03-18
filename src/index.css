@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Organical';
+  src: url('/fonts/organical.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-display: "Outfit", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-accent: "Playfair Display", serif;
+  --font-body: "Libre Baskerville", serif;
+  --font-organical: "Organical", cursive;
+  
+  --color-sand-50: #cec0b2;
+  --color-sand-100: #fdfbf7;
+  --color-sand-200: #f5f2ed;
+  --color-sand-300: #d4a373;
+  --color-sand-400: #bc8a5f;
+  --color-pastel-blue: #d0e1f9;
+  --color-pastel-green: #d4e09b;
+  --color-pastel-pink: #f2d5cf;
+  --color-pastel-purple: #e2d1f9;
+}
+
+@keyframes moveBackground {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% -1000%;
+  }
+}
+
+.animate-move-bg {
+  animation: moveBackground 60s linear infinite;
+}
+
+body {
+  background-color: var(--color-sand-100);
+  color: #1a1a1a;
+}
+
