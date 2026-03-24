@@ -61,6 +61,15 @@ const PROJECTS = [
     color: "bg-pastel-purple"
   },
   {
+  title: "KittyForge",
+  subtitle: "AI-powered frontend generation platform.",
+  link: "https://kitty-forge.vercel.app",
+  tech: ["React", "TypeScript", "Vite", "Node.js", "Firebase", "Gemini API"],
+  description: "Built a full-stack AI platform that converts natural language prompts into fully functional websites. Implemented real-time code generation, live preview rendering, command palette interactions, and secure authentication using Firebase, delivering a Cursor-like development experience in the browser.",
+  icon: <Code2 className="h-6 w-6" />,
+  color: "bg-pastel-blue"
+}
+  {
   title: "Crafting More Experiences Ahead",
   subtitle: "Exciting Projects Ahead",
   tech: [],
