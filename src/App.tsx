@@ -187,12 +187,19 @@ export default function App() {
             </p>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-32">
-              <GlassButton href="#work" className="!bg-sand-300 !text-white hover:!bg-sand-400 shadow-xl">
-                <div className="flex items-center space-x-3">
-                  <span className="font-heading text-sm tracking-widest uppercase font-bold">Open For Opportunities</span>
-                  <ArrowRight className="h-4 w-4" />
-                </div>
-              </GlassButton>
+              <GlassButton
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="!bg-sand-300 !text-white hover:!bg-sand-400 shadow-xl"
+>
+  <div className="flex items-center space-x-3">
+    <span className="font-heading text-sm tracking-widest uppercase font-bold">
+      View Resume
+    </span>
+    <ArrowRight className="h-4 w-4" />
+  </div>
+</GlassButton>
               <a href="#contact" className="group relative font-heading text-sm font-bold uppercase tracking-[0.2em] text-white hover:text-sand-300 transition-colors drop-shadow-md">
                 <span className="relative z-10">Let's Connect</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-sand-300 transition-all duration-300 group-hover:w-full" />
